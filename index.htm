@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h1>Hello, I’m <span>SRAVIKA</span></h1>
+    <p>Aspiring Web Developer 🚀</p>
+    <button onclick="scrollToSection('contact')">Contact Me</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>ABOUT ME!</h2>
+    <p>I am just learning the web developments concepts and trying to improve my knowledgeby making small and easy project.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>MY PROJECTS</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="active" onclick="filterProjects('all', this)">All</button>
+      <button onclick="filterProjects('web', this)">Web Apps</button>
+      <button onclick="filterProjects('ml', this)">ML</button>
+      <button onclick="filterProjects('scripts', this)">Scripts</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="projects-container">
+      <div class="project-card" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website built with HTML, CSS, and JS.</p>
+      </div>
+     
+      <div class="project-card" data-category="scripts">
+        <h3>Weather API</h3>
+        <p>A project on weather.</p>
+      </div>
+      <div class="project-card" data-category="web">
+        <h3>To-Do List App</h3>
+        <p>Interactive to-do list using JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
